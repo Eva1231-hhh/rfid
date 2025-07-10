@@ -479,7 +479,7 @@ class MFRC522_SPI : public MFRC522_BUS_DEVICE {
 public:
         MFRC522_SPI(const byte chipSelectPin, const byte resetPowerDownPin = UNUSED_PIN,
                         SPIClass *spiClass = &SPI, 
-			const SPISettings spiSettings = SPISettings(SPI_CLOCK_DIV4, MSBFIRST, SPI_MODE0))
+			const SPISettings spiSettings = SPISettings(AGT_CLOCK_P403, MSBFIRST, SPI_MODE0))
                      : _chipSelectPin(chipSelectPin),
 			_resetPowerDownPin(resetPowerDownPin),
                         _spiClass(spiClass), 
